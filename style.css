@@ -1,0 +1,152 @@
+/* Importação da fonte Poppins da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Estilos globais para resetar margens e preenchimentos e definir a fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #1dd15d;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para o logotipo na barra de navegação */
+nav .logo a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/* Estilos para a lista de itens de navegação */
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+/* Estilos para os itens da lista de navegação */
+nav li {
+    margin-left: 7px;
+}
+
+/* Estilos para os links dentro dos itens da lista de navegação */
+nav li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Estilos para os links quando hover (destaque) */
+nav li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos para a seção do banner (imagem de fundo com texto sobreposta) */
+.banner {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.308)), url('img/cantores.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos para o texto na seção do banner */
+.texto .titulo {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+/* Estilos para o subtitulo na seção do banner */
+.texto .sub_titulo {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* Estilos para os botões na seção do banner */
+.texto .botoes {
+    margin-top: 30px;
+}
+
+/* Estilos para os botões na seção do banner */
+.texto .botoes button {
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Estilos para o botão sem sobreposição (n-overlay) */
+.texto .botoes button.n-overlay {
+    color: white;
+    background: none;
+    border: 2px solid white;
+}
+
+/* Estilos para o botão sem sobreposição quando hover (destaque) */
+.texto .botoes button.n-overlay:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Estilos para o botão com sobreposição (overlay) com animação de vibrar */
+.texto .botoes button.overlay {
+    background: white;
+    color: black;
+    animation: vibrar 0.5s ease-in-out infinite both;
+}
+
+/* Definição da animação "vibrar" */
+@keyframes vibrar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilos para a seção de rodapé */
+.footer {
+    background-color: #1dd15d;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+ 
+
+
+
+      
+        

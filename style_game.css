@@ -1,0 +1,317 @@
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Definindo estilos para elementos globais */
+html, body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilizando a barra de navegação */
+nav {
+    background-color: #1dd15d;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+    width: 100%;
+}
+
+/* Estilizando o logotipo na barra de navegação */
+nav .logo a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/* Estilizando a lista de links de navegação na barra */
+nav ul {
+    display: flex;
+    align-items: center;
+    line-height: 10px;
+    list-style: none;
+    padding: 10px;
+}
+
+/* Estilizando os itens da lista de navegação */
+nav li {
+    margin-left: 7px;
+}
+
+/* Estilizando os links na lista de navegação */
+nav li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Estilizando os links da lista de navegação no hover */
+nav li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Estilizando o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(img/fundo.jpeg); 
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Estilizando os controles de música */
+#music-controls-container {
+  text-align: center;
+  margin-top: 20px;
+  background: #7e7e7e5a;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  border-radius: 15px;
+}
+
+/* Estilizando os botões no elemento com classe .botoes */
+.texto .botoes button.n-overlay {
+  color: white;
+  background: none;
+  border: 2px solid white;
+}
+
+/* Estilizando os botões no hover no elemento com classe .botoes */
+.texto .botoes button.n-overlay:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Estilizando o botão overlay no elemento com classe .botoes */
+.texto .botoes button.overlay {
+  background: white;
+  color: black;
+  animation: vibrar 0.5s ease-in-out infinite both;
+}
+
+/* Estilizando o botão de resposta */
+#btn-resposta {
+  margin-top: 10px;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #25B960; 
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px; 
+  box-shadow: 0 4px 6px rgba(29, 185, 84, 0.3); 
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 10px;
+  border: 2px solid #000;
+}
+
+/* Estilizando o botão de resposta no hover */
+#btn-resposta:hover {
+  transform: scale(1.1);
+  background-color: #25B960; 
+  box-shadow: 0 6px 8px rgba(29, 185, 84, 0.4); 
+}
+
+/* Margem para botões, rótulos, campos de texto e imagens dentro do #music-controls-container */
+#music-controls-container button,
+#music-controls-container label,
+#music-controls-container input[type="text"],
+#music-controls-container img {
+  margin: 10px;
+}
+
+#music-controls-container{
+  font-size: 25px;
+}
+
+/* Estilos para o botão #play-music */
+#play-music {
+  transform: scale(1.2);
+  background-color: #25B960; 
+  box-shadow: 0 6px 8px rgba(29, 185, 84, 0.4); 
+  align-items: center;
+  border-radius: 15px;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  border : 2px solid #000;
+}
+
+/* Estilos para o botão #play-music no hover */
+#play-music:hover {
+  transform: scale(1.1);
+  background-color: #25B960; 
+  box-shadow: 0 6px 8px rgba(29, 185, 84, 0.4); 
+}
+
+/* Estilos para o elemento #resposta */
+#resposta {
+  display: inline-block;
+}
+
+/* Estilos para o rótulo #lbl-resposta */
+#lbl-resposta {
+  font-size: 25px; 
+  color: #ffffff; 
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para o rótulo #ibl-resposta no hover (Nota: Deve ser #lbl-resposta:hover) */
+#ibl-resposta:hover {
+  transform: scale(1.1);
+  background-color: #25B960; 
+  box-shadow: 0 6px 8px rgba(29, 185, 84, 0.4); 
+}
+
+/* Estilos para o título h1 */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff; 
+}
+
+/* Estilos para o elemento #game-container */
+#game-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para o botão #start-game */
+#start-game {
+  width: 200px;
+  padding: 10px;
+  background-color: #1DB954; 
+  color: #000000; 
+  border: 3px solid #000000;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  border-radius: 7px;
+}
+
+/* Estilos para o botão #start-game no hover */
+#start-game:hover {
+  background-color: #ffffff; 
+}
+
+/* Estilos para todos os botões */
+button {
+  padding: 10px;
+  background-color: #1DB954;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+/* Estilos para todos os botões no hover */
+button:hover {
+  background-color: #25B960; 
+}
+
+/* Estilos para os campos de entrada de texto */
+input[type="text"] {
+  width: 90%;
+  padding: 12px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin: 0 auto;
+  display: none; 
+  text-align: center;
+  background-color: #fff;
+  color: #000; 
+  font-size: 20px;
+}
+
+/* Classe 'hidden' para ocultar elementos */
+.hidden {
+  display: none;
+}
+
+/* Estilos para a seção .banner */
+.banner {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos para botões na seção .texto .botoes */
+.texto .botoes button {
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Estilos para o rodapé .footer */
+.footer {
+  background-color: #1dd15d;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Estilos para elementos de áudio */
+audio {
+  width: 100%;
+}
+
+/* Estilos para campos de entrada e botões genéricos */
+input {
+  width: 50%;
+  margin: 10px 299px;
+}
+
+button {
+  width: 50%;
+  margin: 40px 300px;
+}
+
+/*Estilo da caixa de pontuação*/
+#pontuacao-container {
+  color: #fff; /* Cor do texto */
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #1dd15d;
+  font-size: 25px;
+  border: 2px solid#000000;
+  height: 70%;
+  
+}
+
+   
+      
+      
+        
+

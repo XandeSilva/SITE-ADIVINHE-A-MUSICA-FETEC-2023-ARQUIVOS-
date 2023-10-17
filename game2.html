@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style_game.css">
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+            <img src="img/spotify-logo.png" alt="">
+        </div>
+
+        <ul>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="https://support.spotify.com/br-pt/article/what-is-spotify/"> Sobre Nós </a> </li>
+        </ul>
+    </nav>
+<section class="banner">
+        <button id="start-game" onclick="startGame()"><h3>Iniciar jogo</h3></button>
+        <div id="game-container"></div>
+       <div id= "music-controls-container" class="hidden">
+        <label><h1>Adivinhe a Música!</h1></label>
+        <br>
+        <div id="pontuacao-container" class="hidden">
+            <p id="pontuacao">Pontuação: 0</p>
+          </div>
+          <br>
+       <center>
+        <button id="play-music" class="hidden"><h3>Play</h3></button>
+       </center>
+        <br>
+        
+        <label id="lbl-resposta" for="resposta" class="hidden"><h1>Qual é a música?</h1></label>
+        <br>
+        <input type="text" id="resposta" class="hidden"></input>
+        <button id="btn-resposta" class="hidden">Enviar</button>
+        <br>
+        <br>
+        </div>
+    </section>
+      <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 SPOTIFY. Todos os direitos reservados.</p>
+        </div>
+    </footer> 
+</body>
+<script src="https://sdk.scdn.co/spotify-player.js"></script>
+<script src="script.js"></script>
+</html>
